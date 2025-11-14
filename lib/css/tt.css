@@ -19,8 +19,6 @@ a.tsf-tooltip-item {
 	position: absolute;
 	padding: 0;
 	margin: 0;
-	bottom: 0;
-	left: 0;
 	z-index: 900142;
 	text-align: left;
 	pointer-events: none;
@@ -35,13 +33,10 @@ a.tsf-tooltip-item {
 	text-size-adjust: none;
 }
 
-.tsf-tooltip-down {
-	bottom: auto;
-	top: 0;
-}
-
 .tsf-tooltip-text-wrap {
 	padding: 10px 12px;
+	box-sizing: inherit;
+	max-width: 27em; /* Moderate line-length. */
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 1.625em;
@@ -55,7 +50,7 @@ a.tsf-tooltip-item {
 	word-break: break-word;
 	white-space: pre-line;
 	display: flex;
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 	flex-flow: row wrap;
 	justify-content: flex-start;
 }
